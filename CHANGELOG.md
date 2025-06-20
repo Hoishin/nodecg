@@ -2,6 +2,38 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [2.6.0](https://github.com/Hoishin/nodecg/compare/nodecg-v2.5.3...nodecg-v2.6.0) (2025-06-20)
+
+
+### Features
+
+* move CLI to own package ([#827](https://github.com/Hoishin/nodecg/issues/827)) ([517e7d0](https://github.com/Hoishin/nodecg/commit/517e7d0f4dcea97cd681a07813a254f7c204d37a))
+* move default database adapter to own package ([#821](https://github.com/Hoishin/nodecg/issues/821)) ([2527f15](https://github.com/Hoishin/nodecg/commit/2527f151737971a9dbde5f686f97edf48c48735b))
+* separate database adapter types into own package ([#814](https://github.com/Hoishin/nodecg/issues/814)) ([a8ebaed](https://github.com/Hoishin/nodecg/commit/a8ebaed56a7c0ef953d0f079acca38408b36cad4))
+
+
+### Bug Fixes
+
+* **deps:** bump better-sqlite3 and typeorm ([#850](https://github.com/Hoishin/nodecg/issues/850)) ([926c2cc](https://github.com/Hoishin/nodecg/commit/926c2cc0ca94e6df6437ad0323ad0b226e6f79ca))
+* **release:** combine release with "component" ([#851](https://github.com/Hoishin/nodecg/issues/851)) ([305c257](https://github.com/Hoishin/nodecg/commit/305c257549556378e36e4526a2561cad6af21686))
+* **release:** restructure plugins configuration for clarity and maintainability ([deb1afd](https://github.com/Hoishin/nodecg/commit/deb1afdf7d0e472497e6d78e9cd819cb6bb73ca9))
+* **release:** simplify plugin configuration by removing component references ([ad960b7](https://github.com/Hoishin/nodecg/commit/ad960b7a44faece87a112d9e00477c7804399337))
+* **release:** update component references for workspaces to use 'nodecg' ([e927a73](https://github.com/Hoishin/nodecg/commit/e927a730cc8f57091b17f7dd0317b69e9114c014))
+* **release:** update schema reference and enhance plugin configuration structure ([50e4cfe](https://github.com/Hoishin/nodecg/commit/50e4cfe16e49575ba54ebd5d6933abd58c67d075))
+* **release:** update schema reference and simplify plugin configuration ([074df1a](https://github.com/Hoishin/nodecg/commit/074df1a5ecd7ce8c679654f4a5f16a05e8421d88))
+* **release:** use component names ([#855](https://github.com/Hoishin/nodecg/issues/855)) ([3f31d23](https://github.com/Hoishin/nodecg/commit/3f31d2304d1a47b8c7103b6d88887162b56c9cd4))
+* **release:** use linked-versions ([#854](https://github.com/Hoishin/nodecg/issues/854)) ([fdd6bd8](https://github.com/Hoishin/nodecg/commit/fdd6bd816125a64a759d2a34e07f436a928f7f96))
+
+
+### Dependencies
+
+* The following workspace dependencies were updated
+  * dependencies
+    * @nodecg/cli bumped from 0.0.0 to 2.6.0
+    * @nodecg/database-adapter-sqlite-legacy bumped from 0.0.0 to 2.6.0
+    * @nodecg/database-adapter-types bumped from 0.0.0 to 2.6.0
+    * @nodecg/internal-util bumped from 0.0.0 to 2.6.0
+
 ## [2.5.3](https://github.com/nodecg/nodecg/compare/v2.5.2...v2.5.3) (2025-01-20)
 
 
