@@ -1,7 +1,20 @@
 {
 	"$schema": "https://raw.githubusercontent.com/googleapis/release-please/refs/tags/v16.15.0/schemas/config.json",
 	"release-type": "node",
-	"plugins": ["node-workspace", "linked-versions"],
+	"plugins": [
+		"node-workspace",
+		{
+			"type": "linked-versions",
+			"groupName": "nodecg",
+			"components": [
+				".",
+				"workspaces/internal-util",
+				"workspaces/database-adapter-types",
+				"workspaces/database-adapter-sqlite-legacy",
+				"workspaces/cli"
+			]
+		}
+	],
 	"packages": {
 		".": {
 			"exclude-paths": ["workspaces"]
