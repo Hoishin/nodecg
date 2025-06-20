@@ -1,29 +1,31 @@
 {
-	"$schema": "https://raw.githubusercontent.com/googleapis/release-please/refs/heads/main/schemas/config.json",
+	"$schema": "https://raw.githubusercontent.com/googleapis/release-please/refs/tags/v16.15.0/schemas/config.json",
 	"release-type": "node",
 	"plugins": [
-		{
-			"type": "node-workspace",
-			"merge": false
-		},
+		"node-workspace",
 		{
 			"type": "linked-versions",
 			"groupName": "nodecg",
 			"components": ["nodecg", "internal"]
 		}
 	],
-	"bump-minor-pre-major": true,
-	"bump-patch-for-minor-pre-major": true,
 	"packages": {
 		".": {
 			"exclude-paths": ["workspaces"],
-			"component": "nodecg",
-			"include-component-in-tag": false
+			"component": "nodecg"
 		},
-		"workspaces/internal-util": { "component": "nodecg" },
-		"workspaces/database-adapter-types": { "component": "nodecg" },
-		"workspaces/database-adapter-sqlite-legacy": { "component": "nodecg" },
-		"workspaces/cli": { "component": "nodecg" }
+		"workspaces/internal-util": {
+			"component": "nodecg"
+		},
+		"workspaces/database-adapter-types": {
+			"component": "nodecg"
+		},
+		"workspaces/database-adapter-sqlite-legacy": {
+			"component": "nodecg"
+		},
+		"workspaces/cli": {
+			"component": "nodecg"
+		}
 	},
 	"bootstrap-sha": "ae3433f07d41ccf0b7406ae60425e9730e65e0d0"
 }
